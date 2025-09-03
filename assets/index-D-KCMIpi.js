@@ -76,7 +76,7 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
   border-radius: 50%;
   margin-bottom: 1rem;
 `,zi=At.a`
-  display: block; /* makes it take up full width */
+  display: block;
   width: 100%; 
   text-align: center;
   padding: 0.5rem 1rem;
@@ -90,7 +90,7 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    background-color: #0a223d; /* darker than #113152 */
+    background-color: #0a223d;
     border-left: 2px solid white;
     border-right: 2px solid white;
     color: #ffffff;
@@ -105,12 +105,12 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
 `,vm=At.p`
   font-size: 1.1rem;
   line-height: 1.6;
-`,pg=At.div`
+`,pg=()=>q.jsxs(gg,{children:[q.jsx(Sg,{children:"Skills"}),q.jsxs(Ar,{children:[q.jsx(Tr,{children:"Technical Writing"}),q.jsxs(Rr,{children:[q.jsx("li",{children:"Technical Writing & Documentation"}),q.jsx("li",{children:"Requirements Gathering & Analysis"}),q.jsx("li",{children:"User Guide & Tutorial Creation"}),q.jsx("li",{children:"Information Architecture"}),q.jsx("li",{children:"API Documentation"}),q.jsx("li",{children:"Audience Analysis"})]})]}),q.jsxs(Ar,{children:[q.jsx(Tr,{children:"Technical & Software Proficiency"}),q.jsxs(Rr,{children:[q.jsx("li",{children:"Web & App Development (JavaScript, TypeScript, Python, PostgreSQL)"}),q.jsx("li",{children:"Microsoft Office (Word, Excel, PowerPoint)"}),q.jsx("li",{children:"Markdown (README & documentation)"}),q.jsx("li",{children:"Git / GitHub"}),q.jsx("li",{children:"Postman"}),q.jsx("li",{children:"Figma (diagrams & mockups)"}),q.jsx("li",{children:"Adobe Creative Suite"})]})]}),q.jsxs(Ar,{children:[q.jsx(Tr,{children:"Languages"}),q.jsxs(Rr,{children:[q.jsx("li",{children:"English (Native/Fluent)"}),q.jsx("li",{children:"Greek (Conversational)"}),q.jsx("li",{children:"Japanese (Basic)"})]})]})]}),gg=At.div`
   margin-bottom: 4rem;
-`,gg=At.h2`
+`,Sg=At.h2`
   font-size: 2rem;
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid #1abc9c;
+  border-bottom: 2px solid #ffcc00;
   display: inline-block;
 `,Ar=At.div`
   margin-bottom: 2rem;
@@ -123,18 +123,18 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
   margin-left: 1.25rem;
   font-size: 1.1rem;
   line-height: 1.6;
-`,Sg=()=>q.jsxs(pg,{children:[q.jsx(gg,{children:"Skills"}),q.jsxs(Ar,{children:[q.jsx(Tr,{children:"Technical Writing"}),q.jsxs(Rr,{children:[q.jsx("li",{children:"Technical Writing & Documentation"}),q.jsx("li",{children:"Requirements Gathering & Analysis"}),q.jsx("li",{children:"User Guide & Tutorial Creation"}),q.jsx("li",{children:"Information Architecture"}),q.jsx("li",{children:"API Documentation"}),q.jsx("li",{children:"Audience Analysis"})]})]}),q.jsxs(Ar,{children:[q.jsx(Tr,{children:"Technical & Software Proficiency"}),q.jsxs(Rr,{children:[q.jsx("li",{children:"Web & App Development (JavaScript, TypeScript, Python, PostgreSQL)"}),q.jsx("li",{children:"Microsoft Office (Word, Excel, PowerPoint)"}),q.jsx("li",{children:"Markdown (README & documentation)"}),q.jsx("li",{children:"Git / GitHub"}),q.jsx("li",{children:"Postman"}),q.jsx("li",{children:"Figma (diagrams & mockups)"}),q.jsx("li",{children:"Adobe Creative Suite"})]})]}),q.jsxs(Ar,{children:[q.jsx(Tr,{children:"Languages"}),q.jsxs(Rr,{children:[q.jsx("li",{children:"English (Native/Fluent)"}),q.jsx("li",{children:"Greek (Conversational)"}),q.jsx("li",{children:"Japanese (Basic)"})]})]})]}),bg=[{id:"inventory-manager",title:"Inventory Manager",description:"A web app to organize and track items efficiently."},{id:"book-connection",title:"Book Connection App",description:"React Native app helping people connect through shared book interests."}],Eg=()=>q.jsxs(Ag,{children:[q.jsx("h2",{children:"Projects"}),bg.map(u=>q.jsxs(Tg,{children:[q.jsx(Rg,{children:u.title}),q.jsx(_g,{children:u.description}),q.jsx(xg,{to:`/projects/${u.id}`,children:"View Details"})]},u.id))]}),Ag=At.div` /* same as before */ `,Tg=At.div` /* same as before */ `,Rg=At.h3` /* same as before */ `,_g=At.p` /* same as before */ `,xg=At(Qi)`
+`,bg=[{id:"inventory-manager",title:"Inventory Manager",description:"A web app to organize and track items efficiently."},{id:"book-connection",title:"Book Connection App",description:"React Native app helping people connect through shared book interests."}],Eg=()=>q.jsxs(Ag,{children:[q.jsx("h2",{children:"Projects"}),bg.map(u=>q.jsxs(Tg,{children:[q.jsx(Rg,{children:u.title}),q.jsx(_g,{children:u.description}),q.jsx(xg,{to:`/projects/${u.id}`,children:"View Details"})]},u.id))]}),Ag=At.div` /* same as before */ `,Tg=At.div` /* same as before */ `,Rg=At.h3` /* same as before */ `,_g=At.p` /* same as before */ `,xg=At(Qi)`
   color: #1abc9c;
   text-decoration: none;
   &:hover {
     text-decoration: underline;
   }
-`,Og=At.div`
+`,Og=()=>q.jsxs(zg,{children:[q.jsx(Dg,{children:"Education"}),q.jsxs(pm,{children:[q.jsx(gm,{children:"Vrije Universiteit Amsterdam"}),q.jsx(_r,{children:"Bachelor’s in Philosophy, Minor in Economics"}),q.jsx(_r,{children:"2017 – 2020"})]}),q.jsxs(pm,{children:[q.jsx(gm,{children:"Codecademy Certifications"}),q.jsx(_r,{children:"React, TypeScript, Full-Stack Development"})]})]}),zg=At.div`
   margin-bottom: 4rem;
-`,zg=At.h2`
+`,Dg=At.h2`
   font-size: 2rem;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #1abc9c;
+  border-bottom: 2px solid #ffcc00;
   display: inline-block;
 `,pm=At.div`
   margin-bottom: 1.5rem;
@@ -142,7 +142,7 @@ Please change the parent <Route path="${B}"> to <Route path="${B==="/"?"*":`${B}
   margin: 0;
 `,_r=At.p`
   margin: 0.2rem 0 0 0;
-`,Dg=()=>q.jsxs(Og,{children:[q.jsx(zg,{children:"Education"}),q.jsxs(pm,{children:[q.jsx(gm,{children:"Vrije Universiteit Amsterdam"}),q.jsx(_r,{children:"Bachelor’s in Philosophy, Minor in Economics"}),q.jsx(_r,{children:"2017 – 2020"})]}),q.jsxs(pm,{children:[q.jsx(gm,{children:"Codecademy Certifications"}),q.jsx(_r,{children:"React, TypeScript, Full-Stack Development"})]})]}),Mg=()=>q.jsxs(Ug,{children:[q.jsx("section",{id:"about",children:q.jsx(mg,{})}),q.jsx("section",{id:"skills",children:q.jsx(Sg,{})}),q.jsx("section",{id:"projects",children:q.jsx(Eg,{})}),q.jsx("section",{id:"education",children:q.jsx(Dg,{})})]}),Ug=At.div`
+`,Mg=()=>q.jsxs(Ug,{children:[q.jsx("section",{id:"about",children:q.jsx(mg,{})}),q.jsx("section",{id:"skills",children:q.jsx(pg,{})}),q.jsx("section",{id:"projects",children:q.jsx(Eg,{})}),q.jsx("section",{id:"education",children:q.jsx(Og,{})})]}),Ug=At.div`
   padding: 2rem;
 `,Cg=()=>q.jsxs(Ng,{children:[q.jsx(sg,{}),q.jsx(Mg,{})]}),Ng=At.div`
   display: grid;
