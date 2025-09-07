@@ -18,5 +18,5 @@ const Container = styled.div`
   display: grid;
   grid-template-columns: 300px 1fr;
   min-height: 100vh;
-  background: #f8f9fa;
+  background: #fcfcfc
 `;

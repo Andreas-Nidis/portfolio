@@ -1,12 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-
-
 const Sidebar: React.FC = () => {
     const handleScroll = (id: string) => {
         document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
     };
+
     return (
         <SidebarWrapper>
             <ProfilePic src="https://media.licdn.com/dms/image/v2/D4E03AQG0oinT6GRn7A/profile-displayphoto-shrink_400_400/B4EZeSmsIGGwAg-/0/1750511305814?e=1759968000&v=beta&t=Wa5bJUpfnnLULBrrJuZbaQ1gBwTzvPRPIlPNsRyGOkM" alt="Amazing Profile Photo" />
@@ -31,6 +30,7 @@ const SidebarWrapper = styled.div`
   position: sticky;
   top: 0;
   height: 100vh;
+  width: 200px;
   background: #113152;
   color: white;
   padding: 2rem;
@@ -38,6 +38,7 @@ const SidebarWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  /* border: 2px solid #dc0000; */
 `;
 
 const ProfilePic = styled.img`
@@ -53,8 +54,8 @@ const ProfilePic = styled.img`
 // `;
 
 const SidebarLink = styled.a`
-  display: block; /* makes it take up full width */
-  width: 100%; 
+  display: block;
+  width: 80%; 
   text-align: center;
   padding: 0.5rem 1rem;
 
@@ -67,7 +68,7 @@ const SidebarLink = styled.a`
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    background-color: #0a223d; /* darker than #113152 */
+    background-color: #0a223d;
     border-left: 2px solid white;
     border-right: 2px solid white;
     color: #ffffff;
