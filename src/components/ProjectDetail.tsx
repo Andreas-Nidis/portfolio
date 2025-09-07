@@ -3,18 +3,21 @@ import { useParams, Link } from "react-router-dom";
 import styled from "styled-components";
 import { FaReact, FaNodeJs } from "react-icons/fa";
 import { SiPostgresql, SiFirebase, SiReact, SiJavascript, SiTypescript } from "react-icons/si";
+import pinventoryThumbnail from "../assets/project_thumbnails/pinventory-thumbnail.png";
+import reppleThumbnail from "../assets/project_thumbnails/repple_thumbnail.png";
+// import blurbThumbnail from "../assets/project_thumbnails/blurb.png";
 
 // Sample project data
 const projects = [
   {
     id: "inventory-manager",
-    title: "Inventory Manager",
+    title: "Pinventory",
     description: "A web app to organize and track items efficiently.",
     role: "Full-Stack Dev & Documentation",
     tech: ["JavaScript", "React", "Node.js", "PostgreSQL", "Firebase"],
     github: "https://github.com/Andreas-Nidis/pinventory",
-    live: "https://your-deployed-link.com",
-    image: "../assets/project_thumbnails/pinventory-thumbnail.png",
+    live: "https://pern-store-project.onrender.com",
+    image: pinventoryThumbnail,
     context: "Small teams often lose track of shared equipment or office items.",
     problem: "Spreadsheets are messy, prone to errors, and hard to scale.",
     contributions: [
@@ -32,7 +35,7 @@ const projects = [
     tech: ["JavaScript", "React Native"],
     github: "https://github.com/Andreas-Nidis/Blurb",
     live: "https://github.com/Andreas-Nidis/Blurb/blob/main/README.md#-live-demo",
-    image: "../assets/project_thumbnails/blurb.png",
+    // image: blurbThumbnail,
     context: "People often struggle to meet like-minded readers offline.",
     problem: "Most social apps are too broad and lack book-specific features.",
     contributions: [
@@ -44,13 +47,13 @@ const projects = [
   },
   {
     id: "gym-app",
-    title: "Gym App",
+    title: "Repple",
     description: "A mobile app to organize and track workouts and diets efficiently.",
     role: "Full-Stack Mobile Dev & Technical Writer",
     tech: ["TypeScript", "React", "Node.js", "PostgreSQL", "Firebase"],
     github: "https://github.com/Andreas-Nidis/repple",
     live: "https://github.com/Andreas-Nidis/repple/releases/tag/apk",
-    image: "../assets/project_thumbnails/repple_thumbnail.png",
+    image: reppleThumbnail,
     context: "",
     problem: "",
     contributions: [
@@ -83,9 +86,11 @@ const ProjectDetails: React.FC = () => {
 
   return (
     <DetailsWrapper>
-      <ImageLink href={project.live || project.github} target="_blank">
-        <ProjectImage src={project.image} alt={project.title} />
-      </ImageLink>
+      {project.image && (
+        <ImageLink href={project.live || project.github} target="_blank">
+          <ProjectImage src={project.image} alt={project.title} />
+        </ImageLink>
+      )}
       <TitleLink href={project.live || project.github} target="_blank">
         {project.title}
       </TitleLink>
@@ -147,14 +152,19 @@ const DetailsWrapper = styled.div`
 `;
 
 const ImageLink = styled.a`
-  display: inline-block;
+  display: block;
 `;
 
 const ProjectImage = styled.img`
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
+  display: block;
+  margin: 0 auto 1rem auto;
+  height: auto;
+  width: auto;
+  max-width: 100%;  
+  max-height: 500px; 
+  border-radius: 40px;
   box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  object-fit: contain;
 `;
 
 const TitleLink = styled.a`
