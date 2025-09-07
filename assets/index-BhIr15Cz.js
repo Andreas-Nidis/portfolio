@@ -261,28 +261,33 @@ Please change the parent <Route path="${w}"> to <Route path="${w==="/"?"*":`${w}
   grid-template-columns: 300px 1fr;
   min-height: 100vh;
   background: #fcfcfc
-`,Gm=[{id:"inventory-manager",title:"Inventory Manager",description:"A web app to organize and track items efficiently.",role:"Full-Stack Dev & Documentation",tech:["JavaScript","React","Node.js","PostgreSQL","Firebase"],github:"https://github.com/Andreas-Nidis/pinventory",live:"https://pern-store-project.onrender.com",image:"../assets/project_thumbnails/pinventory-thumbnail.png",context:"Small teams often lose track of shared equipment or office items.",problem:"Spreadsheets are messy, prone to errors, and hard to scale.",contributions:["Designed database schema and API endpoints","Built React front-end for CRUD operations","Wrote documentation including setup guide and user manual"],impact:"Improved item tracking efficiency, reducing missing item reports by ~40% in testing."},{id:"book-connection",title:"Blurb - Judged by the Cover",description:"React Native app helping people connect through shared book interests.",role:"Mobile Dev & User Guides",tech:["JavaScript","React Native"],github:"https://github.com/Andreas-Nidis/Blurb",live:"https://github.com/Andreas-Nidis/Blurb/blob/main/README.md#-live-demo",image:"../assets/project_thumbnails/blurb.png",context:"People often struggle to meet like-minded readers offline.",problem:"Most social apps are too broad and lack book-specific features.",contributions:["Built React Native onboarding flow","Integrated Firebase for authentication and data storage","Created user tutorials and app flow diagrams"],impact:"Testers reported higher engagement and easier connections based on book preferences."},{id:"gym-app",title:"Gym App",description:"A mobile app to organize and track workouts and diets efficiently.",role:"Full-Stack Mobile Dev & Technical Writer",tech:["TypeScript","React","Node.js","PostgreSQL","Firebase"],github:"https://github.com/Andreas-Nidis/repple",live:"https://github.com/Andreas-Nidis/repple/releases/tag/apk",image:"../assets/project_thumbnails/repple_thumbnail.png",context:"",problem:"",contributions:["Built React Native onboarding flow","Integrated Firebase for authentication and data storage","Created user tutorials and app flow diagrams"],impact:"Testers reported higher engagement and easier connections based on book preferences."}],H2={React:b.jsx(a1,{}),"React Native":b.jsx(M3,{}),"Node.js":b.jsx(yu,{}),Express:b.jsx(yu,{}),PostgreSQL:b.jsx(u1,{}),Firebase:b.jsx(R3,{}),TypeScript:b.jsx(i1,{}),JavaScript:b.jsx(n1,{})},Qm=()=>{const{id:u}=w4(),c=Gm.find(f=>f.id===u);return c?b.jsxs(Xm,{children:[b.jsx(Zm,{href:c.live||c.github,target:"_blank",children:b.jsx(Vm,{src:c.image,alt:c.title})}),b.jsx(Km,{href:c.live||c.github,target:"_blank",children:c.title}),b.jsx(Jm,{children:c.role}),b.jsx(km,{children:c.description}),b.jsxs(Fa,{children:[b.jsx(Pa,{children:"Context"}),b.jsx(Uf,{children:c.context})]}),b.jsxs(Fa,{children:[b.jsx(Pa,{children:"Problem"}),b.jsx(Uf,{children:c.problem})]}),b.jsxs(Fa,{children:[b.jsx(Pa,{children:"My Contributions"}),b.jsx($m,{children:c.contributions.map((f,r)=>b.jsx("li",{children:f},r))})]}),b.jsxs(Fa,{children:[b.jsx(Pa,{children:"Impact"}),b.jsx(Uf,{children:c.impact})]}),b.jsxs(Fa,{children:[b.jsx(Pa,{children:"Tech Stack"}),b.jsx(Wm,{children:c.tech.map(f=>b.jsxs(Fm,{children:[H2[f]&&b.jsx(t7,{children:H2[f]})," ",f]},f))})]}),b.jsxs(Fa,{children:[b.jsx(Pa,{children:"Links"}),b.jsxs(Pm,{children:[c.live&&b.jsx(B2,{href:c.live,target:"_blank",children:"Live Demo"}),b.jsx(B2,{href:c.github,target:"_blank",children:"GitHub Repository"}),b.jsx(w2,{to:"/#projects",children:"Back to Projects"})]})]})]}):b.jsxs(Im,{children:["Project not found. ",b.jsx(w2,{to:"/#projects",children:"Back to Projects"})]})},Xm=k.div`
+`,Gm="/portfolio/assets/pinventory-thumbnail-D7fXINWK.png",Qm="/portfolio/assets/repple_thumbnail-DGEkcuRQ.png",Xm=[{id:"inventory-manager",title:"Pinventory",description:"A web app to organize and track items efficiently.",role:"Full-Stack Dev & Documentation",tech:["JavaScript","React","Node.js","PostgreSQL","Firebase"],github:"https://github.com/Andreas-Nidis/pinventory",live:"https://pern-store-project.onrender.com",image:Gm,context:"Small teams often lose track of shared equipment or office items.",problem:"Spreadsheets are messy, prone to errors, and hard to scale.",contributions:["Designed database schema and API endpoints","Built React front-end for CRUD operations","Wrote documentation including setup guide and user manual"],impact:"Improved item tracking efficiency, reducing missing item reports by ~40% in testing."},{id:"book-connection",title:"Blurb - Judged by the Cover",description:"React Native app helping people connect through shared book interests.",role:"Mobile Dev & User Guides",tech:["JavaScript","React Native"],github:"https://github.com/Andreas-Nidis/Blurb",live:"https://github.com/Andreas-Nidis/Blurb/blob/main/README.md#-live-demo",context:"People often struggle to meet like-minded readers offline.",problem:"Most social apps are too broad and lack book-specific features.",contributions:["Built React Native onboarding flow","Integrated Firebase for authentication and data storage","Created user tutorials and app flow diagrams"],impact:"Testers reported higher engagement and easier connections based on book preferences."},{id:"gym-app",title:"Repple",description:"A mobile app to organize and track workouts and diets efficiently.",role:"Full-Stack Mobile Dev & Technical Writer",tech:["TypeScript","React","Node.js","PostgreSQL","Firebase"],github:"https://github.com/Andreas-Nidis/repple",live:"https://github.com/Andreas-Nidis/repple/releases/tag/apk",image:Qm,context:"",problem:"",contributions:["Built React Native onboarding flow","Integrated Firebase for authentication and data storage","Created user tutorials and app flow diagrams"],impact:"Testers reported higher engagement and easier connections based on book preferences."}],H2={React:b.jsx(a1,{}),"React Native":b.jsx(M3,{}),"Node.js":b.jsx(yu,{}),Express:b.jsx(yu,{}),PostgreSQL:b.jsx(u1,{}),Firebase:b.jsx(R3,{}),TypeScript:b.jsx(i1,{}),JavaScript:b.jsx(n1,{})},Zm=()=>{const{id:u}=w4(),c=Xm.find(f=>f.id===u);return c?b.jsxs(Vm,{children:[c.image&&b.jsx(Km,{href:c.live||c.github,target:"_blank",children:b.jsx(Jm,{src:c.image,alt:c.title})}),b.jsx(km,{href:c.live||c.github,target:"_blank",children:c.title}),b.jsx($m,{children:c.role}),b.jsx(Wm,{children:c.description}),b.jsxs(Fa,{children:[b.jsx(Pa,{children:"Context"}),b.jsx(Uf,{children:c.context})]}),b.jsxs(Fa,{children:[b.jsx(Pa,{children:"Problem"}),b.jsx(Uf,{children:c.problem})]}),b.jsxs(Fa,{children:[b.jsx(Pa,{children:"My Contributions"}),b.jsx(Fm,{children:c.contributions.map((f,r)=>b.jsx("li",{children:f},r))})]}),b.jsxs(Fa,{children:[b.jsx(Pa,{children:"Impact"}),b.jsx(Uf,{children:c.impact})]}),b.jsxs(Fa,{children:[b.jsx(Pa,{children:"Tech Stack"}),b.jsx(Pm,{children:c.tech.map(f=>b.jsxs(Im,{children:[H2[f]&&b.jsx(l7,{children:H2[f]})," ",f]},f))})]}),b.jsxs(Fa,{children:[b.jsx(Pa,{children:"Links"}),b.jsxs(t7,{children:[c.live&&b.jsx(B2,{href:c.live,target:"_blank",children:"Live Demo"}),b.jsx(B2,{href:c.github,target:"_blank",children:"GitHub Repository"}),b.jsx(w2,{to:"/#projects",children:"Back to Projects"})]})]})]}):b.jsxs(e7,{children:["Project not found. ",b.jsx(w2,{to:"/#projects",children:"Back to Projects"})]})},Vm=k.div`
   max-width: 800px;
   margin: 0 auto 4rem auto;
   text-align: center;
-`,Zm=k.a`
-  display: inline-block;
-`,Vm=k.img`
-  max-width: 100%;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
 `,Km=k.a`
+  display: block;
+`,Jm=k.img`
+  display: block;
+  margin: 0 auto 1rem auto;
+  height: auto;
+  width: auto;
+  max-width: 100%;  
+  max-height: 500px; 
+  border-radius: 40px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  object-fit: contain;
+`,km=k.a`
   font-size: 2rem;
   color: #113152;
   font-weight: bold;
   text-decoration: none;
   &:hover { text-decoration: underline; }
-`,Jm=k.p`
+`,$m=k.p`
   font-style: italic;
   color: #43607d;
   margin-bottom: 1rem;
-`,km=k.p`
+`,Wm=k.p`
   font-size: 1.1rem;
   margin-bottom: 2rem;
 `,Fa=k.div`
@@ -295,24 +300,24 @@ Please change the parent <Route path="${w}"> to <Route path="${w==="/"?"*":`${w}
 `,Uf=k.p`
   font-size: 1.05rem;
   line-height: 1.6;
-`,$m=k.ul`
+`,Fm=k.ul`
   list-style: disc inside;
   text-align: left;
   line-height: 1.6;
-`,Wm=k.ul`
+`,Pm=k.ul`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.5rem;
   list-style: none;
   padding-left: 0;
-`,Fm=k.li`
+`,Im=k.li`
   background-color: #113152;
   color: #fff;
   padding: 0.2rem 0.6rem;
   border-radius: 4px;
   font-size: 0.9rem;
-`,Pm=k.div`
+`,t7=k.div`
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -327,12 +332,12 @@ Please change the parent <Route path="${w}"> to <Route path="${w==="/"?"*":`${w}
   font-weight: 500;
   text-decoration: none;
   &:hover { text-decoration: underline; }
-`,Im=k.p`
+`,e7=k.p`
   font-size: 1.2rem;
   margin-top: 2rem;
   text-align: center;
-`,t7=k.span`
+`,l7=k.span`
   font-size: 1rem;
   margin-right: 0.3rem;
   color: #fff;
-`,e7=()=>b.jsx(x5,{children:b.jsxs(P4,{children:[b.jsx(Bf,{path:"/",element:b.jsx(qm,{})}),b.jsx(Bf,{path:"/projects/:id",element:b.jsx(Qm,{})})]})});i4.createRoot(document.getElementById("root")).render(b.jsx(C.StrictMode,{children:b.jsx(e7,{})}));
+`,a7=()=>b.jsx(x5,{children:b.jsxs(P4,{children:[b.jsx(Bf,{path:"/",element:b.jsx(qm,{})}),b.jsx(Bf,{path:"/projects/:id",element:b.jsx(Zm,{})})]})});i4.createRoot(document.getElementById("root")).render(b.jsx(C.StrictMode,{children:b.jsx(a7,{})}));
